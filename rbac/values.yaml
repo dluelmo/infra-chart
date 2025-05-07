@@ -1,0 +1,21 @@
+######################################
+# Groups to define in all clusters
+######################################
+
+groups:
+  clusteradmins:
+  - alice
+
+  devTeam1:
+  - bob
+  - charlie
+
+
+######################################
+# Roles in all clusters
+######################################  
+
+roles:
+  - name: "edit"
+
+
