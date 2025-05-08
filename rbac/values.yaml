@@ -3,19 +3,32 @@
 ######################################
 
 groups:
-  clusteradmins:
-  - alice
-
-  devTeam1:
-  - bob
-  - charlie
-
+  - clusteradmin
+  - adminnamespaces
 
 ######################################
-# Roles in all clusters
+# Namespace defined in the cluster
+######################################
+namespaces:
+  - developers-app1
+  - developers-app2
+  - application
+
+#####################################
+# Roles in the clusters
 ######################################  
 
-roles:
-  - name: "edit"
+developer-roles:
+ - edit
 
+admin-roles:
+ - admin
 
+######################################
+# Environments in the clusters
+######################################  
+
+environments:
+ - pro
+ - pre
+ - des
